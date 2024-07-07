@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+  <html>
+
+  <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width">
+          <title>Undersea Wonders Hub</title>
+          <link href="style.css" rel="stylesheet" type="text/css" />
+          <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Sans+Arabic:wght@600&family=Poppins&display=swap"
+                  rel="stylesheet">
+          <link rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <style>
+          body {
+
+                  font-family: cursive;
+                  background-color: skyblue;
+
+          }
+
+          html {
+                  cursor: url("cursor.png"), auto !important;
+                  height: auto;
+          }
+
+          .nav-links {
+                  display: flex;
+                  justify-content: center;
+                  background-color: darkseagreen;
+                  color: black;
+                  font-family: cursive;
+          }
+
+          .sticky {
+                  position: fixed;
+                  top: -0;
+                  width: 100%;
+          }
+
+          .links-index-nav {
+                  margin: 20px;
+                  padding-left: 50px;
+                  color: black;
+                  text-decoration: none;
+                  font-weight: 700;
+          }
+
+          .links-index-nav:hover {
+                  text-decoration: underline;
+                  font-style: italic;
+                  color: #D6FB41;
+          }
+
+          .hero {
+                  display: flex;
+                  justify-content: space-evenly;
+                  font-family: cursive;
+
+          }
+
+          .hero-1 {
+                  display: flex;
+                  justify-content: space-evenly;
+          }
+
+
+
+          #cursor {
+                  position: fixed;
+                  width: 20px;
+                  height: 20px;
+                  border-radius: 50%;
+                  background-color: #fff;
+                  transition: 0.1s;
+                  transform: translate(-50%, -50%);
+                  pointer-events: none;
+                  mix-blend-mode: difference;
+          }
+
+    #evidence {
+            width: 100%;
+            height: 3680px;
+            position: relative;
+            top: 50px;
+            background-color: #161A30;
+            display: flex;
+    }
+
+    #evidence-text {
+            width: 40%;
+            height: 20%;
+            position: sticky;
+            left: -70px;
+            top: 5px;
+            color: white;
+            text-align: right;
+            margin-top: 65px;
+            margin-right: 50px;
+            font-family: system-ui;
+            font-size: 20px;
+    }
+
+    #evidence-content {
+            position: absolute;
+            left: 41%;
+            top: 50px;
+            height: auto;
+            width: 58%;
+    }
+
+    .evidences {
+            position: relative;
+            left: 0px;
+            border-bottom: 2px solid white;
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            display: flex;
+    }
+
+    .evidences-image img {
+            border-radius: 50%;
+            margin-top: 10px;
+            margin-left: 55px;
+    }
+
+    .evidences-content {
+            color: white;
+            margin-left: 50px;
+    }
+
+    .evidences-image img {
+            border-radius: 50%;
+            margin-top: 10px;
+            margin-left: 55px;
+    }
+
+    .evidences-content {
+            color: white;
+            margin-left: 50px;
+    }
+
+          #footer-basic {
+                  padding: 40px 0;
+                  background-color: lightblue;
+                  color: #4b4c4d;
+                  position: absolute;
+                  top: 6375px;
+                  left: -10px;
+                  width: 105%;
+          }
+
+          #footer-basic ul {
+                  padding: 0;
+                  list-style: none;
+                  text-align: center;
+                  font-size: 18px;
+                  line-height: 1.6;
+                  margin-bottom: 0;
+          }
+
+          #footer-basic li {
+                  padding: 0 10px;
+          }
+
+          .list-inline li {
+                  display: inline-block;
+          }
+
+          #footer-basic ul a {
+                  color: black;
+                  text-decoration: none;
+                  opacity: 0.8;
+          }
+
+          #footer-basic ul a:hover {
+                  opacity: 1;
+          }
+
+          #footer-basic .social {
+                  text-align: center;
+                  padding-bottom: 25px;
+          }
+
+          #footer-basic .social>a {
+                  font-size: 24px;
+                  width: 40px;
+                  height: 40px;
+                  line-height: 40px;
+                  display: inline-block;
+                  text-align: center;
+                  border-radius: 50%;
+                  border: 1px solid #ccc;
+                  margin: 0 8px;
+                  color: inherit;
+                  opacity: 0.75;
+          }
+
+          #footer-basic .social>a:hover {
+                  opacity: 0.9;
+          }
+
+          #footer-basic .copyright {
+                  margin-top: 15px;
+                  text-align: center;
+                  font-size: 13px;
+                  color: black;
+                  margin-bottom: 0;
+          }
+
+          .tagline {
+                  margin-top: 15px;
+                  text-align: center;
+                  width: 100%;
+                  color: #aaa;
+          }
+
+          #game h1 {
+                  font-size: 80px;
+                  color: #fff;
+                  text-align: center;
+                  -webkit-animation: glow 1s ease-in-out infinite alternate;
+                  -moz-animation: glow 1s ease-in-out infinite alternate;
+                  animation: glow 1s ease-in-out infinite alternate;
+          }
+
+          @-webkit-keyframes glow {
+                  from {
+                          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+                  }
+
+                  to {
+                          text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+                  }
+          }
+  </style>
+<body>
+  <div id="cursor"></div>
+  <div id="main">
+        <div class="nav-links" id="navbar">
+          <a href="index.html"><img src="logo.png" style="height:100px; width:500;border-radius:44px;">
+                <a href="index.html" class="links-index-nav text"><b>Home 🏠</b></a>
+                <a href="quiz.html" class="links-index-nav text">Action Taken🚶🏻</a>
+                <a href="https://undersea-wonders.printify.me/products" class="links-index-nav text">Store🏪</a>
+                <a href="game.html" class="links-index-nav text">Game 🎮</a>
+                <a href="contact us.html" class="links-index-nav text">Contact Us 📞</a>
+        </div>
+                </nav>
+                <br><br><br><br><br>
+<div id="game">
+                <h1>Ocean Cleanup Challenge</h1>
+                    <iframe src="https://scratch.mit.edu/projects/988392020/embed" allowtransparency="true" width="100%" height="720px" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                <center>
+                        <footer>
+                                <h3>Bhargav Venkat</h3>
+                                </a>
+                                <a href="copyright.html">
+                                        <h3><i>Copyrights</i></h3>
+                                </a>
+                        </footer>
+                        <div id="loader-overlay">
+                                <div class="loader"></div>
+                                <div id="loader-text">Loading...</div>
+                        </div>
+                </center>
+                <script>
+                        // JavaScript for loader functionality
+                        document.onreadystatechange = function () {
+                                if (document.readyState !== "complete") {
+                                        document.getElementById("loader-overlay").style.display = "block";
+                                } else {
+                                        document.getElementById("loader-overlay").style.display = "none";
+                                }
+                        };
+
+
+
+                        const cursor = document.querySelector("#cursor");
+
+                        document.addEventListener("mousemove", (e) => {
+                                cursor.style.left = e.clientX + "px";
+                                cursor.style.top = e.clientY + "px";
+                        });
+
+                </script>
+</body>
+
+</html>
